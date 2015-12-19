@@ -49,7 +49,7 @@ border: 2px solid #66d344;
 
 
 #accordion-section-social_options ul li.customize-control span:before{
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -60,29 +60,29 @@ border: 2px solid #66d344;
 }
 
 #customize-control-fb_textbox span:before {
-    content: '\f204';
+    content: '\f09a';
 }
 #customize-control-tw_textbox span:before {
-    content: '\f202';
+    content: '\f099';
 }
 #customize-control-dribbble_textbox span:before {
-    content: '\f201';
+    content: '\f17d';
 }
 #customize-control-plusgoogle_textbox span:before {
-    content: '\f206';
+    content: '\f0d5';
 }
 #customize-control-pinterest_textbox span:before {
-    content: '\f209';
+    content: '\f231';
 }
 #customize-control-github_textbox span:before {
-    content: '\f200';
+    content: '\f09b';
 }
 #customize-control-tumblr_textbox span:before {
-    content: '\f214';
+    content: '\f173';
 }
 #customize-control-youtube_textbox span:before {
-    content: '\f213';
+    content: '\f167';
 }
 #customize-control-linkedin_textbox span:before {
-    content: '\f207';
+    content: '\f0e1';
 }

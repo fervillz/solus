@@ -137,7 +137,7 @@ function solus_scripts() {
 
 	wp_enqueue_style( 'solus-responsive-css', get_template_directory_uri() . '/responsive.css');
 
-	wp_enqueue_style( 'solus-generic-icons-css', get_template_directory_uri() . '/genericons/genericons.css');
+	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . 'font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'solus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -168,7 +168,7 @@ function customizer_stylesheet() {
 
     wp_register_style( 'customizer-css', get_template_directory_uri() . '/customizer.css', NULL, NULL, 'all' );
     wp_enqueue_style( 'customizer-css' );
-	wp_enqueue_style( 'solus-generic-icons-css', get_template_directory_uri() . '/genericons/genericons.css');
+	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . 'font-awesome/css/font-awesome.min.css');
 
 }
 add_action( 'customize_controls_print_styles', 'customizer_stylesheet' );
