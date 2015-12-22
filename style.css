@@ -2203,11 +2203,11 @@ color: #fff;
 }
 
 .icon:before {
-    content: '\f419';
+    content: '\f0c9';
 }
 
 .sidr-open .icon:before {
-content: '\f406';
+content: '\f00d';
 
 }
 
