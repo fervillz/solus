@@ -534,7 +534,8 @@ input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'],
-textarea {
+textarea,
+select {
     color: #000;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -545,7 +546,8 @@ input[type='email']:focus,
 input[type='url']:focus,
 input[type='password']:focus,
 input[type='search']:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     color: #111;
 }
 
@@ -553,7 +555,8 @@ input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'],
-input[type='search'] {
+input[type='search'],
+select {
     padding: 3px;
 }
 
@@ -807,7 +810,8 @@ input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'],
-input[type='search'] {
+input[type='search'],
+select  {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -824,7 +828,9 @@ input[type='url']:focus,
 input[type='password']:active,
 input[type='password']:focus,
 input[type='search']:active,
-input[type='search']:focus {
+input[type='search']:focus,
+select:active,
+select :focus {
     border-color: #d4d4d4;
     outline: none;
     background: white;
@@ -953,6 +959,8 @@ a {
 a:visited {
     color: #66d344;
 }
+.entry-content a:hover { color: #66d344; }
+
 a:hover,
 a:focus,
 a:active {
@@ -1430,13 +1438,13 @@ object {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
-.site-main .comment-navigation .nav-previous {
+.nav-links .nav-previous {
     position: relative;
     float: left;
     width: 50%;
     text-align: left;
 }
-.site-main .comment-navigation .nav-next {
+.nav-links .nav-next {
     position: relative;
     float: right;
     width: 50%;
@@ -2378,6 +2386,7 @@ a.read_more_link{
 
 .section--footer-widgets .block{
     width: 100%;
+    max-width: 250px; 
     min-height: 250px;
     margin: 0 20px;
 }
