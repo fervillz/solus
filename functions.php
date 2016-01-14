@@ -137,7 +137,7 @@ function solus_scripts() {
 
 	wp_enqueue_style( 'solus-responsive-css', get_template_directory_uri() . '/responsive.css');
 
-	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . 'font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'solus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
