@@ -1470,17 +1470,24 @@ object {
     border-top: 3px solid #eee;
 }
 
+.comments-area a:hover {
+    color: #58b23b;
+}
+
 .comments-title,
 #respond h3 {
     font-size: 1.2em;
     line-height: 1.36em;
-    color: #fff;
+    color: #66d344;
 }
 .comments-title small,
 .comment-reply-title small {
     float: right;
+    color: #66d344;
 }
-
+.comment-reply-link:hover {
+    color: #58b23b;
+}
 .comment-list,
 .comment-list .children {
     list-style: none;
@@ -1496,8 +1503,8 @@ object {
 }
 
 .comment {
-    margin-top: 26px;
-    padding-top: 27px;
+    margin-top: 15px;
+    padding-top: 16px;
     border-top: 1px solid #eee;
 }
 
@@ -1513,7 +1520,7 @@ object {
 }
 .comment-meta .comment-author .fn {
     display: block;
-    font-weight: normal;
+    font-weight: bold;
     margin-left: 74px;
     text-transform: none;
 }
@@ -1521,16 +1528,21 @@ object {
     font-size: .8125em;
     font-weight: normal;
     line-height: 2.09231em;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
     margin-left: 74px;
     letter-spacing: 1px;
     color: #fff;
 }
 .comment-meta .comment-metadata a {
-    color: #fff;
-}
-.comment-meta .comment-metadata a:hover {
     color: #66d344;
+}
+
+.comment-meta .comment-metadata a:hover {
+    color: #58b23b;
+}
+
+.comment-content p {
+    margin-bottom: 15px;
 }
 
 .comments-area .edit-link:before {
