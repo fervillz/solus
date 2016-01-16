@@ -1,7 +1,7 @@
 /*
 Theme Name: Solus
-Author: fernan villamor jr
-Author URI: http://fernandovillamorjr.com
+Author: DevriX
+Author URI: http://devrix.com/
 Description: Solus test task with mario
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1018,6 +1018,18 @@ a:active {
     width: auto;
     max-height: 150px;
     margin: 0 auto 7px;
+    padding-bottom: 1px;
+}
+
+.site-logo a {
+    font-family: "Open Sans", Georgia, Times, serif;
+    padding: 20px; 
+    color: white;
+    background-color: #66D344;
+}
+
+.site-branding a:hover {
+    background-color: #58b23b;
 }
 .custom-header {
     display: block;

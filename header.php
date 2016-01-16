@@ -28,17 +28,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-				
-				<?php if ( get_theme_mod( 'solus' ) ) : ?>
-			    
+				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>		    
 			    <div class='site-logo'>
-			        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'solus' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+			        <h2><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h2>
 			    </div>
-				<?php else : ?>
-				<!-- lod default logo -->
-				   <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a>
-				<?php endif; ?>
 			</div><!-- .site-branding -->
 			
 
@@ -59,31 +52,31 @@
 <div class="social-links">
 			<ul>
 				<li>
-					<a href="<?php echo get_theme_mod( 'fb_textbox', 'facebook.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'fb_textbox', 'http://facebook.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'tw_textbox', 'twitter.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'tw_textbox', 'http://twitter.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'dribbble_textbox', 'dribbble.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'dribbble_textbox', 'http://dribbble.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'plusgoogle_textbox', 'plus.google.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'plusgoogle_textbox', 'http://plus.google.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'pinterest_textbox', 'pinterest.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'pinterest_textbox', 'http://pinterest.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'github_textbox', 'github.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'github_textbox', 'http://github.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'tumblr_textbox', 'tumblr.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'tumblr_textbox', 'http://tumblr.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'youtube_textbox', 'youtube.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'youtube_textbox', 'http://youtube.com' ); ?>"></a>
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'linkedin_textbox', 'linkedin.com' ); ?>"></a>
+					<a href="<?php echo get_theme_mod( 'linkedin_textbox', 'http://linkedin.com' ); ?>"></a>
 				</li>
 			</ul>
 		</div><!-- .social-links -->
