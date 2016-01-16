@@ -1019,6 +1019,7 @@ a:active {
     max-height: 150px;
     margin: 0 auto 7px;
     padding-bottom: 1px;
+    line-height: 50px;
 }
 
 .site-logo a {
@@ -1030,6 +1031,12 @@ a:active {
 
 .site-branding a:hover {
     background-color: #58b23b;
+}
+
+.site-branding p {
+    font-family: "Open Sans", Georgia, Times, serif;
+    font-size: 20px;
+    color: white;
 }
 .custom-header {
     display: block;

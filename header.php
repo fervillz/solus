@@ -17,8 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/min.css">
-
 <?php wp_head(); ?>
 </head>
 
@@ -32,6 +30,11 @@
 			    <div class='site-logo'>
 			        <h2><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h2>
 			    </div>
+			    <?php
+	 			$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<?php endif; ?>
 			</div><!-- .site-branding -->
 			
 

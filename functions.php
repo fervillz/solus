@@ -168,8 +168,8 @@ function customizer_stylesheet() {
 
     wp_register_style( 'customizer-css', get_template_directory_uri() . '/customizer.css', NULL, NULL, 'all' );
     wp_enqueue_style( 'customizer-css' );
-	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . 'font-awesome/css/font-awesome.min.css');
-
+	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style( 'min-css', get_template_directory_uri() . '/min.css');
 }
 add_action( 'customize_controls_print_styles', 'customizer_stylesheet' );
 

@@ -10,13 +10,13 @@
 
 <div id="tertiary" class="footer-widget-area">
 
-<?php for ($i=1; $i <=3; $i++) :?>
-	<div class="block footer-widget-<?php echo $i ?>">
-		<?php if (! dynamic_sidebar( "footer-widget-".$i )): ?>
+<?php for ($widget_num = 1; $widget_num <= 3; $widget_num++) :?>
+	<div class="block footer-widget-<?php echo $widget_num ?>">
+		<?php if ( ! dynamic_sidebar( "footer-widget-".$widget_num ) ): ?>
 			<h3 class="footer-widget-title">Widget Title</h3>
-			Add Some <a href="<?php echo site_url(); ?>/wp-admin/widgets.php" target="_blank"><b>widgets</b></a>
+			Add Some <a href="<?php echo site_url(); ?>/wp-admin/widgets.php" target="_blank">widgets</a>
 		<?php endif ?>
-	</div><!-- /footer-widget-1 -->
+	</div><!-- /footer-widget-num -->
 <?php endfor; ?>
 
 </div><!-- #secondary -->
