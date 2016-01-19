@@ -2096,7 +2096,7 @@ div.sharedaddy div.sd-block {
 }
 
 .sidr {
-       background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .6);
     color: #fff;
     display: none;
     height: 100%;
@@ -2426,6 +2426,10 @@ a.read_more_link{
     float: left;
     list-style-type: none;
     margin-right: 10px;
+}
+
+.footer-navigation .menu li {
+    list-style: none;
 }
 
 .menu-footer-container{
