@@ -37,18 +37,20 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 			
-
- 		<a href="#sidr-main" class="navigation-button">
-            <span class="icon"><span class="menu-text"><?php _e( 'Menu', 'solus' ); ?></span><span>
-        </a>
-
- 		
+			<div class="nav-search">
+				<a href="#sidr-main" class="navigation-button">
+					<span class="icon"><span class="menu-text"><?php _e( 'Menu', 'solus' ); ?></span><span>
+				</a>
+				
+				<?php get_search_form(); ?>
+			</div>
+			 		
 		<!-- #site-navigation -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
         	<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
         </nav><!-- #site-navigation -->
 		
-        <?php get_search_form(); ?>
+       
 
 
 	</header><!-- #masthead -->

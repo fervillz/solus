@@ -1111,7 +1111,7 @@ a:active {
 }
 .main-navigation a,
 .main-navigation a:visited {
-    display: block;
+    display: inline-block;
     padding: 14px 0 14px;
     text-decoration: none;
     color: #fff;
@@ -2103,7 +2103,7 @@ div.sharedaddy div.sd-block {
     overflow-x: none;
     overflow-y: auto;
     position: fixed;
-    top: 0;
+    top: 103px;
     width: 250px;
     z-index: ffffff;
 }
@@ -2310,7 +2310,7 @@ a.read_more_link{
 }
 
 .sidr-inner .menu-primary-container{
-   margin-top: 50px; 
+   margin-top: 10px; 
 }
 
 .post_thumb img{
