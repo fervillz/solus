@@ -127,15 +127,9 @@ function solus_scripts() {
 
 	wp_enqueue_style( 'font-icons-css', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css');
 
-	wp_enqueue_script( 'solus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'solus-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
 
-	wp_enqueue_script( 'solus-navigation-heler', get_template_directory_uri() . '/js/helpers.js', array(), '20120206', true );
-
-	wp_deregister_script('jquery');
-
-	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", false, null);
-	
-	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'solus-navigation-heler', get_template_directory_uri() . '/js/helpers.js', array('jquery'), '20120206', true );
 
 	wp_register_style('Open-sans', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . '://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700');
 	
