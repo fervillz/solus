@@ -1022,9 +1022,9 @@ a:active {
     line-height: 50px;
 }
 
-.site-logo a {
+.site-title a {
     font-family: "Open Sans", Georgia, Times, serif;
-    padding: 20px; 
+    padding: 10px 20px; 
     color: white;
     background-color: #66D344;
 }
@@ -1055,20 +1055,6 @@ a:active {
 .site-branding img{
     max-width: 145px;
     width: 100%;
-}
-
-.site-title {
-    font-size: 27px;
-    line-height: 1;
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    clear: none;
-    margin: 0;
-}
-.site-title a {
-    text-decoration: none;
-    color: #000;
 }
 
 .site-branding .site-logo a > img {

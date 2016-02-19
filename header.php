@@ -26,17 +26,21 @@
 
 	<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>		    
+				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+				
+				<?php if ( get_theme_mod( 'solus_logo' ) ) : ?>
+			    
 			    <div class='site-logo'>
-			        <h2><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h2>
+			        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'solus_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 			    </div>
-			    <?php
-	 			$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-					<p><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<?php else : ?>
+				    <hgroup>
+				        <h3 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h3>
+				        <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+				    </hgroup>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-			
+				
 			<div class="nav-search">
 				<a href="#sidr-main" class="navigation-button">
 					<span class="icon"><span class="menu-text"><?php _e( 'Menu', 'solus' ); ?></span><span>

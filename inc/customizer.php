@@ -20,14 +20,14 @@ function solus_customize_register( $wp_customize ) {
     'description' => 'Upload a logo to replace the default site name and description in the header',
     ) );
     
-    $wp_customize->add_setting( 'solus',
+    $wp_customize->add_setting( 'solus_logo',
         'sanitize_callback' == 'esc_url_raw'
     );
 
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'solus', array(
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'solus_logo', array(
         'label'    => __( 'Logo', 'solus' ),
         'section'  => 'solus_section',
-        'settings' => 'solus',
+        'settings' => 'solus_logo',
         'sanitize_callback' => 'esc_url_raw',
     ) ) );
 
