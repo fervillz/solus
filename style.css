@@ -1903,6 +1903,32 @@ div.sharedaddy div.sd-block {
 
 
 /* Media Queries */
+
+/* Target Iphone 6 portrait directly */
+@media all and (max-width: 330px) {
+    .search-form {
+        display: none;
+    }
+
+    .single .site-content, .page .site-content, .error404 .site-content, .search .site-content {
+        padding: 20px;
+        background: #fff;
+    }
+}
+
+/* Target Iphone 6 portrait directly */
+@media all and (min-width: 331px) {
+    .search-form {
+        display: none;
+    }
+
+    .single .site-content, .page .site-content, .error404 .site-content, .search .site-content {
+        background: #fff;
+        padding: 75px;
+    }
+}
+
+
 @media screen and (min-width: 75em) {
     .site {
     }
@@ -2314,12 +2340,7 @@ a.read_more_link{
     clear: both;
 }
 
-.single #content, .page #content, .error404 #content, .search #content{
-    background: #fff;
-    padding: 75px;
-}
-
-.single #content #primary, .page #content #primary, .error404 #content #primary, .search #content #primary{
+.single .site-content #primary, .page .site-content #primary, .error404 .site-content #primary, .search .site-content #primary{
     width: 100%;
 }
 
@@ -2422,7 +2443,7 @@ a.read_more_link{
     float: right;
 }
 
-.page #content #primary {
+.page .site-content #primary {
 width: 65%;
 }
 
