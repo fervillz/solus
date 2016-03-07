@@ -31,6 +31,21 @@ function solus_customize_register( $wp_customize ) {
         'sanitize_callback' => 'esc_url_raw',
     ) ) );
 
+    $wp_customize->add_setting( 'solus_header_background_color', array(
+       'default' => '66D344',
+       'transport'   => 'refresh',
+    ) );  
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize, 
+        'solus_header_background_color_control',
+        array(
+            'label'    => __( 'Header background color', 'solus' ), 
+            'section'  => 'colors',
+            'settings' => 'solus_header_background_color',
+            'priority' => 10,
+        ) 
+    ));  
+
     /**
      * Custom template tags for this theme.
      */
@@ -38,6 +53,18 @@ function solus_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'solus_customize_register' );
+
+function solus_custom_colors() {
+    ?>
+    <style type='text/css'>
+    .site-branding a {
+        background-color: <?php echo get_theme_mod('solus_header_background_color') ?> ;
+    }
+    </style>
+    <?php
+}
+
+add_action( 'wp_head' , 'solus_custom_colors' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.

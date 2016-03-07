@@ -1024,13 +1024,9 @@ a:active {
 
 .site-title a {
     font-family: "Open Sans", Georgia, Times, serif;
-    padding: 10px 20px; 
+    padding: 20px; 
     color: white;
     background-color: #66D344;
-}
-
-.site-branding a:hover {
-    background-color: #58b23b;
 }
 
 .site-branding p {

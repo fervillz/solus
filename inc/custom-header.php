@@ -25,7 +25,7 @@
 function solus_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'solus_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '1d222b',
+		'default-text-color'     => 'ffffff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
@@ -35,6 +35,7 @@ function solus_custom_header_setup() {
 	) ) );
 }
 add_action( 'after_setup_theme', 'solus_custom_header_setup' );
+
 
 if ( ! function_exists( 'solus_header_style' ) ) :
 /**
@@ -125,3 +126,5 @@ function solus_admin_header_image() {
 <?php
 }
 endif; // solus_admin_header_image
+
+
