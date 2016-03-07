@@ -1193,13 +1193,13 @@ a:active {
     margin: 0 0 27px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #fff;
+    /*color: #fff;*/
 }
 .entry-footer a,
 .entry-meta a,
 .entry-footer a:visited,
 .entry-meta a:visited {
-    color: #fff;
+    color: #66d344;
 }
 .entry-footer a:hover,
 .entry-meta a:hover {
@@ -1707,7 +1707,7 @@ object {
     padding: 0 7px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #fff;
+    /*color: #fff;*/
 }
 .wp_widget_tag_cloud a:hover,
 .tags-links a:hover {
