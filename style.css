@@ -1020,6 +1020,7 @@ a:active {
     margin: 0 auto 7px;
     padding-bottom: 1px;
     line-height: 50px;
+    text-align: center;
 }
 
 .site-title a {
@@ -1027,6 +1028,7 @@ a:active {
     padding: 20px; 
     color: white;
     background-color: #66D344;
+    line-height: 50px;
 }
 
 .site-branding p {
