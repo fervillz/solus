@@ -1869,33 +1869,33 @@ div.sharedaddy div.sd-block {
 }
 .social-links ul a[href*='wordpress.org']:before,
 .social-links ul a[href*='wordpress.com']:before {
-    content: '\f205';
+    content: '\f19a';
 }
-.social-links ul a[href*='facebook.com']:before {
+.social-links ul a[class='facebook']:before {
+    content: '\f09a';
+}
+.social-links ul a[class='twitter']:before {
     content: '\f099';
 }
-.social-links ul a[href*='twitter.com']:before {
-    content: '\f202';
-}
-.social-links ul a[href*='dribbble.com']:before {
+.social-links ul a[class='dribbble']:before {
     content: '\f17d';
 }
-.social-links ul a[href*='plus.google.com']:before {
+.social-links ul a[class='plusgoogle']:before {
     content: '\f0d5';
 }
-.social-links ul a[href*='pinterest.com']:before {
+.social-links ul a[class='pinterest']:before {
     content: '\f231';
 }
-.social-links ul a[href*='github.com']:before {
+.social-links ul a[class='github']:before {
     content: '\f09b';
 }
-.social-links ul a[href*='tumblr.com']:before {
+.social-links ul a[class='tumblr']:before {
     content: '\f173';
 }
-.social-links ul a[href*='youtube.com']:before {
+.social-links ul a[class='youtube']:before {
     content: '\f167';
 }
-.social-links ul a[href*='linkedin.com']:before {
+.social-links ul a[class='linkedin']:before {
     content: '\f0e1';
 }
 

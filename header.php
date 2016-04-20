@@ -56,33 +56,51 @@
 	</header><!-- #masthead -->
 	<div class="social-links">
 		<ul>
+			<?php if (get_theme_mod( 'fb_textbox', 'http://facebook.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'fb_textbox', 'http://facebook.com' ); ?>"></a>
+				<a class="facebook" href="<?php echo get_theme_mod( 'fb_textbox', 'http://facebook.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'tw_textbox', 'http://twitter.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'tw_textbox', 'http://twitter.com' ); ?>"></a>
+				<a class="twitter" href="<?php echo get_theme_mod( 'tw_textbox', 'http://twitter.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'dribbble_textbox', 'http://dribbble.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'dribbble_textbox', 'http://dribbble.com' ); ?>"></a>
+				<a class="dribbble" href="<?php echo get_theme_mod( 'dribbble_textbox', 'http://dribbble.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'plusgoogle_textbox', 'http://plus.google.com' )) { ?>			
 			<li>
-				<a href="<?php echo get_theme_mod( 'plusgoogle_textbox', 'http://plus.google.com' ); ?>"></a>
+				<a class="plusgoogle" href="<?php echo get_theme_mod( 'plusgoogle_textbox', 'http://plus.google.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'pinterest_textbox', 'http://pinterest.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'pinterest_textbox', 'http://pinterest.com' ); ?>"></a>
+				<a class="pinterest" href="<?php echo get_theme_mod( 'pinterest_textbox', 'http://pinterest.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'github_textbox', 'http://github.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'github_textbox', 'http://github.com' ); ?>"></a>
+				<a class="github" href="<?php echo get_theme_mod( 'github_textbox', 'http://github.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'tumblr_textbox', 'http://tumblr.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'tumblr_textbox', 'http://tumblr.com' ); ?>"></a>
+				<a class="tumblr" href="<?php echo get_theme_mod( 'tumblr_textbox', 'http://tumblr.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'youtube_textbox', 'http://youtube.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'youtube_textbox', 'http://youtube.com' ); ?>"></a>
+				<a class="youtube" href="<?php echo get_theme_mod( 'youtube_textbox', 'http://youtube.com' ); ?>"></a>
 			</li>
+			<?php } ?>
+			<?php if (get_theme_mod( 'linkedin_textbox', 'http://linkedin.com' )) { ?>
 			<li>
-				<a href="<?php echo get_theme_mod( 'linkedin_textbox', 'http://linkedin.com' ); ?>"></a>
+				<a class="linkedin" href="<?php echo get_theme_mod( 'linkedin_textbox', 'http://linkedin.com' ); ?>"></a>
 			</li>
+			<?php } ?>
 		</ul>
 	</div><!-- .social-links -->
 	<?php if ( get_header_image() ) : ?>
