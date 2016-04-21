@@ -23,11 +23,6 @@
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solus' ), 'solus', '<a href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
 		</div><!-- .site-info -->
-
-		<!-- #site-navigation -->
-        <nav id="footer-site-navigation" class="footer-navigation" role="navigation">
-        	<?php wp_nav_menu( array( 'theme_location' => 'footer') ); ?>
-        </nav><!-- #footer-site-navigation -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
