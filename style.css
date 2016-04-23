@@ -1915,7 +1915,7 @@ div.sharedaddy div.sd-block {
 }
 
 /* Target Iphone 6 portrait directly */
-@media all and (min-width: 331px) {
+@media all and (max-width: 640px) {
     .search-form {
         display: none;
     }
