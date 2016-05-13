@@ -97,17 +97,36 @@ function solus_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
-    for ( $i=1; $i <=3; $i++){
-		register_sidebar( array(
-			'name'          => esc_html__( 'Footer'.$i, 'solus' ),
-			'id'            => 'footer-widget-'.$i,
-			'description'   => 'Footer Widget '.$i,
-			'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="footer-widget-title">',
-			'after_title'   => '</h3>',
-		) );
-	}
+   register_sidebar( array(
+		'name'          => esc_html__( 'Footer-1', 'solus' ),
+		'id'            => 'footer-widget-1',
+		'description'   => 'Footer Widget 1',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+    register_sidebar( array(
+		'name'          => esc_html__( 'Footer-2', 'solus' ),
+		'id'            => 'footer-widget-2',
+		'description'   => 'Footer Widget 2',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	 register_sidebar( array(
+		'name'          => esc_html__( 'Footer-3', 'solus' ),
+		'id'            => 'footer-widget-3',
+		'description'   => 'Footer Widget 3',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
 }
 add_action( 'widgets_init', 'solus_widgets_init' );
 
