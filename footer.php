@@ -19,8 +19,7 @@
 		<a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/', 'solus' ) ); ?>">
 			<?php printf( esc_html__( 'Proudly powered by %s', 'solus' ), 'WordPress' ); ?>
 		</a>
-		<span class="sep"> | 
-</span>
+		<span class="sep"> | </span>
 		<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solus' ), 'solus', '<a target="_blank" href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
 	</div>
 	<!-- .site-info -->
