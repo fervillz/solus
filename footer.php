@@ -8,25 +8,27 @@
  *
  * @package Solus
  */
-
 ?>
-
-	</div><!-- #content -->
-	
-	<div class="section--footer-widgets">
-		<?php get_sidebar('footer' ); ?>
+</div>
+<!-- #content -->
+<div class="section--footer-widgets">
+	<?php get_sidebar('footer' ); ?>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="site-info">
+		<a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/', 'solus' ) ); ?>">
+			<?php printf( esc_html__( 'Proudly powered by %s', 'solus' ), 'WordPress' ); ?>
+		</a>
+		<span class="sep"> | 
+</span>
+		<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solus' ), 'solus', '<a target="_blank" href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
 	</div>
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/', 'solus' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'solus' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solus' ), 'solus', '<a target="_blank" href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+	<!-- .site-info -->
+</footer>
+<!-- #colophon -->
+</div>
+<!-- #page -->
 <?php wp_footer(); ?>
-
 </body>
+
 </html>

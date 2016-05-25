@@ -19,12 +19,12 @@
 		<!-- .entry-header -->
 		<div class="entry-content">
 			<?php  
-				if ( is_home() ) {
-					the_excerpt();
-				}else {
-					the_content();
-				}
-			 ?>
+			if ( is_home() ) {
+				the_excerpt();
+			}else {
+				the_content();
+			}
+		 ?>
 		</div>
 		<!-- .entry-content -->
 		<footer class="home-entry-footer">
@@ -33,4 +33,4 @@
 		<!-- .entry-footer -->
 	</div>
 </article>
-	<!-- #post-## -->
+<!-- #post-## -->

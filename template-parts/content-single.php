@@ -8,16 +8,15 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
 		<div class="entry-meta">
 			<?php solus_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
+		</div>
+		<!-- .entry-meta -->
+	</header>
+	<!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -26,10 +25,11 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-
+	</div>
+	<!-- .entry-content -->
 	<footer class="entry-footer">
 		<?php solus_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
+	</footer>
+	<!-- .entry-footer -->
+</article>
+<!-- #post-## -->
