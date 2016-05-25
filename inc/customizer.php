@@ -114,7 +114,6 @@ function solus_custom_colors() {
     </style>
     <?php
 }
-
 add_action( 'wp_head' , 'solus_custom_colors' );
 
 /**

@@ -1,6 +1,6 @@
 === Solus ===
 
-Contributors: automattic
+Contributors: devrix, automattic
 Tags: Slim, Responsive, Dark, Blue, Clean, Modern, Blog, Custom Logo, Custom Background, translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
@@ -35,6 +35,6 @@ Solus includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - May 24 2016 =
 * Initial release
 
