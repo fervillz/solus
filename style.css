@@ -2191,7 +2191,7 @@ div.sharedaddy div.sd-block {
 
 	.main-navigation ul ul {
 		position: absolute;
-		z-index: fff99;
+		z-index: 99;
 		display: none;
 		visibility: hidden;
 		float: left;
@@ -2202,7 +2202,8 @@ div.sharedaddy div.sd-block {
 		transition: all .3s ease-in-out;
 		text-align: left;
 		opacity: 0;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.9);
+		top: 35px;  
 	}
 
 	.main-navigation ul ul li {
@@ -2581,18 +2582,6 @@ a.read_more_link {
 
 .menu-footer-container {
 	float: right;
-}
-
-.page .site-content #primary,
-.search .site-content #primary,
-.archive #primary {
-	width: 65%;
-}
-
-.page #secondary,
-.search #secondary,
-.archive #secondary {
-	width: 30%;
 }
 
 .archive .content-wrapper {
