@@ -1053,6 +1053,7 @@ a:active {
 .site-header {
 	margin: 0 0 15px;
 	position: relative;
+	text-align: center;
 }
 
 .site-logo {
@@ -1067,10 +1068,11 @@ a:active {
 
 .site-title a {
 	font-family: "Open Sans", Georgia, Times, serif;
-	padding: 20px;
 	color: white;
 	background-color: #66D344;
 	line-height: 50px;
+	-webkit-box-shadow: 0 0 0 10px #66D344;
+	box-shadow: 0 0 0 10px #66D344;
 }
 
 .site-branding p {
@@ -2163,6 +2165,9 @@ div.sharedaddy div.sd-block {
 		font-size: .8125em;
 		line-height: 2.09231em;
 		text-align: center;
+		display: inline-block;
+		width: 80%;
+		margin: auto;
 	}
 
 	.main-navigation ul:first-child {
@@ -2415,7 +2420,7 @@ div.sharedaddy div.sd-block {
 	vertical-align: text-bottom;
 	color: #fff;
 	position: absolute;
-	top: 0px;
+	top: 16px;
 	z-index: 9999;
 }
 
@@ -2503,6 +2508,7 @@ a.read_more_link {
 	border-radius: 0;
 	font-size: 14px;
 	font-family: inherit;
+	z-index: 99999;
 }
 
 .post_thumb {
