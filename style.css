@@ -1475,6 +1475,10 @@ object {
 	text-decoration: none;
 }
 
+.navigation.posts-navigation {
+	margin: 10px 0 100px;
+}
+
 .site-main .post-navigation .nav-next a:hover {
 	color: #66d344;
 }
