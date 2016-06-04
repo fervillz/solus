@@ -1475,6 +1475,10 @@ object {
 	text-decoration: none;
 }
 
+.site-main .post-navigation .nav-next a:hover {
+	color: #66d344;
+}
+
 .site-main .post-navigation a,
 .site-main .paging-navigation a {
 	color: #aaa;
@@ -2108,8 +2112,8 @@ div.sharedaddy div.sd-block {
 	.site-info {
 		line-height: 1.7;
 		float: left;
-		max-width: 60%;
 		text-align: left;
+		width: 100%;
 	}
 
 	.social-links {
@@ -2227,8 +2231,7 @@ div.sharedaddy div.sd-block {
 	}
 
 	.main-navigation ul ul ul {
-		top: 0;
-		left: 100%;
+		left: 20px;
 	}
 
 	.main-navigation ul ul li a,
@@ -2238,17 +2241,20 @@ div.sharedaddy div.sd-block {
 	}
 }
 
+.logged-in .sidr {
+	padding-top: 32px;
+}
+
 .sidr {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #fff;
 	display: none;
-	height: 100%;
 	overflow-x: none;
-	overflow-y: auto;
 	position: fixed;
-	top: 103px;
-	width: 250px;
-	z-index: ffffff;
+	top: 0;
+	width: 264px;
+	overflow-y: scroll;
+	height: 100%;
 }
 
 .sidr .sidr-inner {
@@ -2304,15 +2310,48 @@ div.sharedaddy div.sd-block {
 	padding: 0;
 }
 
+.sidr ul ul {
+	position: absolute;
+	z-index: 99;
+	display: none;
+	visibility: hidden;
+	float: left;
+	padding: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-align: left;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.9);
+	top: 40px;  
+	width: 100%;
+}
+
+.sidr ul li:hover > ul,
+.sidr ul li.focus > ul {
+	display: block;
+	visibility: visible;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	opacity: 1;
+}
+
 .sidr ul li {
 	display: block;
 	margin: 0;
 	line-height: 48px;
+	position: relative;
+}
+
+.sidr > ul > li > ul {
+	top: 48px;
 }
 
 .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
 	border-top: none;
-	line-height: 49px;
 }
 
 .sidr ul li:hover > a, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span {
@@ -2321,10 +2360,13 @@ div.sharedaddy div.sd-block {
 }
 
 .sidr ul li a, .sidr ul li span {
-	padding: 0 15px;
+	padding: 13px 15px;
+	padding-right: 60px;
 	display: block;
 	text-decoration: none;
 	color: #fff;
+	word-wrap: break-word;
+	line-height: normal;
 }
 
 .sidr ul li ul {
@@ -2408,6 +2450,27 @@ div.sharedaddy div.sd-block {
 
 .sidr-open .icon:before {
 	content: '\f00d';
+}
+
+.admin-bar .navigation-button .icon {
+	top: calc( 14px + 32px ) !important;
+}
+
+.sidr-open .navigation-button .icon,
+.sidr-main-float .navigation-button .icon {
+	position: fixed;
+	top: 14px;
+	background: black;
+	padding: 7px 10px;
+}
+
+.sidr-open .navigation-button .icon,
+.sidr-open.sidr-main-float .navigation-button .icon{
+	left: 200px;
+}
+
+.sidr-main-float .navigation-button .icon {
+	left: 20px;
 }
 
 .icon {
@@ -2601,4 +2664,12 @@ a.read_more_link {
 	background: #fff;
 	padding: 30px;
 	margin-top: 50px;
+}
+
+.copyright {
+	float: left;
+}
+
+.theme-author {
+	float: right;
 }

@@ -16,11 +16,15 @@
 </div>
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
-		<a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/', 'solus' ) ); ?>">
-			<?php printf( esc_html__( 'Proudly powered by %s', 'solus' ), 'WordPress' ); ?>
-		</a>
-		<span class="sep"> | </span>
-		<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solus' ), 'solus', '<a target="_blank" href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
+		<span class="copyright">
+			<a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/', 'solus' ) ); ?>">
+				<?php printf( esc_html__( 'Proudly powered by %s', 'solus' ), 'WordPress' ); ?>
+			</a>
+		</span>
+		<span class="theme-author">
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s', 'solus' ), 'solus', '<a target="_blank" href="http://devrix.com" rel="designer">Devrix</a>' ); ?>
+		</span>
+		
 	</div>
 	<!-- .site-info -->
 </footer>
