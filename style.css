@@ -2043,13 +2043,27 @@ div.sharedaddy div.sd-block {
 	    background-color: black !important;
 	}
 
-	.search-form {
+	article, .not-found {
+	    background: #fff;
+	    padding: 0 !important;
+	}
+
+	.site-content .widget-area {
+	    margin-top: 0 !important;
+	    padding-top: 0 !important;
+	}
+
+	.sidr-main-float .navigation-button .icon {
+	    left: 5px !important; 
+	}
+
+	.nav-search .search-form {
 		display: none;
 	}
 
 	.single .site-content, .page .site-content, .error404 .site-content, .search .site-content {
 		background: #fff;
-		padding: 75px;
+		padding: 40px;
 	}
 }
 
