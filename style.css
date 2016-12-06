@@ -2052,6 +2052,7 @@ div.sharedaddy div.sd-block {
 		padding: 75px;
 	}
 }
+
 /*Tablet*/
 @media only screen and (max-width: 1024px) {
 	.sidr {
@@ -2267,12 +2268,13 @@ div.sharedaddy div.sd-block {
 	position: fixed;
 	top: 0;
 	width: 264px;
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 	height: 100%;
 }
 
 .sidr .sidr-inner {
 	padding: 0 0 15px;
+	margin-top: 55px;
 }
 
 .sidr .sidr-inner > p {
