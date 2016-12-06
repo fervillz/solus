@@ -2039,6 +2039,10 @@ div.sharedaddy div.sd-block {
 
 /* Target Iphone 6 portrait directly */
 @media all and (max-width: 640px) {
+	.sidr {
+	    background-color: black !important;
+	}
+
 	.search-form {
 		display: none;
 	}
@@ -2046,6 +2050,12 @@ div.sharedaddy div.sd-block {
 	.single .site-content, .page .site-content, .error404 .site-content, .search .site-content {
 		background: #fff;
 		padding: 75px;
+	}
+}
+/*Tablet*/
+@media only screen and (max-width: 1024px) {
+	.sidr {
+	    background-color: black !important;
 	}
 }
 
