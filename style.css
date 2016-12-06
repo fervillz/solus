@@ -2057,6 +2057,10 @@ div.sharedaddy div.sd-block {
 	    left: 5px !important; 
 	}
 
+	.sidr-open .navigation-button .icon, .sidr-open.sidr-main-float .navigation-button .icon {
+
+	}
+
 	.nav-search .search-form {
 		display: none;
 	}
@@ -2496,7 +2500,7 @@ div.sharedaddy div.sd-block {
 
 .sidr-open .navigation-button .icon,
 .sidr-open.sidr-main-float .navigation-button .icon{
-	left: 200px;
+	left: 200px !important;
 }
 
 .sidr-main-float .navigation-button .icon {
